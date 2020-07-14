@@ -1,7 +1,8 @@
 # JS-Assignment
 LetsUpgrade JS Assignment
 
-# NOTE:
+# 13/07/2020 Assignments are uploaded individually
+# The following are the details of it
 # -----------------------------
 # a1.html--->assignment1
 # a1.PNG--->assignment1 output
