@@ -1,0 +1,60 @@
+<!--assignment1 DISPLAYING CURRENT DAY AND CURRENT TIME -->
+
+<html>
+    <head>
+       <font color="magenta"> 
+        <font size="10"> 
+         <center> CURRENT DAY AND CURRENT TIME</center> 
+          </font>
+          </font>
+         </head>
+         <title>Assignment1</title>
+    <body bgcolor="yellow">
+        <center>
+            <p> 
+        <font color="green"> 
+            <font size="5">  
+        <script>
+            var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  document.write("Today is : " + daylist[day] + ".");
+  var hour = today.getHours();
+  var minute = today.getMinutes();
+  var second = today.getSeconds();
+  var prepand = (hour >= 12)? " PM ":" AM ";
+  hour = (hour >= 12)? hour - 12: hour;
+  if (hour===0 && prepand===' PM ') 
+  { 
+  if (minute===0 && second===0)
+  { 
+  hour=12;
+  prepand=' Noon';
+  } 
+  else
+  { 
+  hour=12;
+  prepand=' PM';
+  } 
+  } 
+  if (hour===0 && prepand===' AM ') 
+  { 
+  if (minute===0 && second===0)
+  { 
+  hour=12;
+  prepand=' Midnight';
+  } 
+  else
+  { 
+  hour=12;
+  prepand=' AM';
+  } 
+  } 
+  document.write("<p>Current time is : "+hour + prepand + " : " + minute + " : " + second);
+           </script>
+           </font>
+        </font>
+    </p>
+    </center>
+</body>
+</html>
