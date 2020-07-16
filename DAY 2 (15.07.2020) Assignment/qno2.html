@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 2 (15/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Question no.2</title>
+</head>
+<body>
+    <h3>Question no.2</h3>
+    <p>Explain with examples, the remaining methods of string and array</p>
+    <h3>STRINGS:</h3>
+    <li> JavaScript strings are used for storing and manipulating text.</li>
+    <li> A JavaScript string is zero or more characters written inside quotes.</li>
+    <li> <b> Example: </b> var x = "John Doe";</li>
+    <li> You can use single or double quotes.</li>
+    <li> <b>Example: </b> var carName1 = "Volvo XC60";  // Double quotes
+        var carName2 = 'Volvo XC60';  // Single quotes</li>
+        <li>You can use quotes inside a string, as long as they don't match the quotes surrounding the string .</li>
+        <li> <b>Example: </b> var answer1 = "It's alright";</li>
+
+    <ul></ul>
+    <h3>STRING METHODS:</h3>
+    <ul>
+        <li> Primitive values, like "John Doe", cannot have properties or methods (because they are not objects)</li>
+        <li>But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties. </li>
+        <li>The following are some of the methods of String, the are as follows</li>
+        
+
+    </ul>
+    <h3>String Length: </h3>
+    <ul>
+        <li> The length property returns the length of a string</li>
+        <li> <b>Example: </b> var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            var sln = txt.length;</li>
+        </ul>
+            <script>
+                var a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var b = a.length;
+console.log(b);
+            </script>
+
+    <h3>Finding a String in a String </h3>
+    <ul>
+        <li>The <b>indexOf()</b> method returns the index of (the position of) the first occurrence of a specified text in a string</li>
+  <li> <b> Example: </b> var str = "Please locate where 'locate' occurs!";
+    var pos = str.indexOf("locate");
+    <script>
+        var c = "Please locate where 'locate' occurs!";
+    var d = c.indexOf("locate");
+    console.log(d);
+    </script>
+    </li>
+    <li> JavaScript counts positions from zero.</li>
+    <li> 0 is the first position in a string, 1 is the second, 2 is the third ...</li>
+    <li> The<b> lastIndexOf()</b> method returns the index of the last occurrence of a specified text in a string.</li>
+    <li><b>Example: </b>var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");</li>
+        <script>
+            var e = "Please locate where 'locate' occurs!";
+        var f = e.lastIndexOf("locate");
+        console.log(f);
+        </script>
+        <li> Both indexOf(), and lastIndexOf() return -1 if the text is not found.</li>
+        
+    </ul>
+    <h3> Searching for a String in a String:</h3>
+    <ul>
+        <li> The search() method searches a string for a specified value and returns the position of the match</li>
+        <li> <b> Example: </b>var str = "Please locate where 'locate' occurs!";
+            var pos = str.search("locate"); </li>
+            <script>
+                var g = "Please locate where 'locate' occurs!";
+var h = g.search("locate");
+console.log(h);
+            </script>
+    </ul>
+
+    <h3>The slice() Method:</h3> 
+    <ul>
+        <li>slice() extracts a part of a string and returns the extracted part in a new string. </li>
+        <li> <b> Example: </b>var str = "Apple, Banana, Kiwi";
+            var res = str.slice(7, 13);</li>
+            <script>
+                var i = "Apple, Banana, Kiwi";
+var j = i.slice(7, 13);
+console.log(j);
+            </script>
+    </ul>
+    <h3> The substring() Method: </h3>
+    <ul>
+        <li>substring() is similar to slice(). </li>
+        <li> The difference is that substring() cannot accept negative indexes.</li>
+        <li> <b> Example: </b> var str = "Apple, Banana, Kiwi";
+            var res = str.substring(7, 13);</li>
+            <script>
+                var k = "Apple, Banana, Kiwi";
+var l = k.substring(7, 13);
+console.log(l);
+            </script>
+
+
+    </ul>
+    <h3> The substr() Method</h3>
+    <ul>
+        <li> substr() is similar to slice()</li>
+       <li> The difference is that the second parameter specifies the length of the extracted part.</li>
+       <li><b>Example: </b> var str = "Apple, Banana, Kiwi";
+        var res = str.substr(7, 6);</li>
+        <script>
+            var m = "Apple, Banana, Kiwi";
+var n = m.substr(7, 6);
+console.log(n);
+        </script>
+    </ul>
+    <h3> Replacing String Content:</h3>
+    <ul>
+        <li> The replace() method replaces a specified value with another value in a string.</li>
+        <li><b> Example: </b> str = "Please visit Microsoft!";
+            var n = str.replace("Microsoft", "W3Schools"); </li>
+            <script>
+                o = "Please visit Microsoft!";
+var p = o.replace("Microsoft", "W3Schools");
+console.log(p);
+            </script>
+    </ul>
+    <h3>Converting to Upper and Lower Case: </h3>
+    <ul>
+        <li> A string is converted to upper case with <b>toUpperCase()</b>.</li>
+        <li><b>Example: </b> var text1 = "Hello World!";       // String
+            var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+            </li>
+            <script>
+                var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+console.log(text2);
+
+            </script>
+            <li> A string is converted to lower case with <b>toLowerCase()</b></li>
+            <li><b>Example: </b>var text1 = "Hello World!";       // String
+                var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+                </li>
+                <script> 
+                var t1 = "Hello World!";       // String
+var t2 = t1.toLowerCase();  // text2 is text1 converted to lower
+console.log(t2);
+</script>
+    </ul>
+    <h3> The concat() Method</h3>
+    <ul>
+        <li> concat() joins two or more strings.</li>
+        <li> <b>Example: </b>var text1 = "Hello";
+            var text2 = "World";
+            var text3 = text1.concat(" ", text2);</li>
+            <script>
+                var tex1 = "Hello";
+var tex2 = "World";
+var text3 = tex1.concat(" ", tex2);
+console.log(text3);
+            </script>
+    </ul>
+    <h3> JavaScript Arrays</h3>
+    <ul>
+        <li>JavaScript arrays are used to store multiple values in a single variable. </li>
+        <li><b>Example: </b> var cars = ["Saab", "Volvo", "BMW"];</li>
+        <script>
+            var cars = ["Saab", "Volvo", "BMW"];
+            console.log(cars);
+        </script>
+    </ul>
+    <h3>Array Methods</h3>
+    <ul>
+        <li>
+            An array is a special variable, which can hold more than one value at a time
+        </li>
+        <li> An array can hold many values under a single name, and you can access the values by referring to an index number</li>
+        <li> The following are some of the methods of Arrays, the are as follows</li>
+    </ul>
+    <h3> Access the Elements of an Array
+    </h3>
+    <ul>
+        <li>
+            You access an array element by referring to the index number.
+        </li>
+        <li><b>Example: </b>var cars = ["Saab", "Volvo", "BMW"];
+            console.log(cars[0]);
+        </li>
+        <script>
+            var cs = ["Saab", "Volvo", "BMW"];
+            console.log(cs[0]);
+        </script>
+    </ul>
+    <h3> Changing an Array Element</h3>
+    <ul>
+        <li> This statement changes the value of the first element in cars</li>
+        <li><b>Example: </b> var cars = ["Saab", "Volvo", "BMW"];
+            cars[0] = "Opel";</li>
+            <script>
+                var cas = ["Saab", "Volvo", "BMW"];
+cas[0] = "Opel";
+console.log(cas);
+            </script>
+    </ul>
+    <h3> The length Property</h3>
+    <ul>
+        <li>The length property of an array returns the length of an array (the number of array elements). </li>
+        <li><b>Example:</b> var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fruits.length;   // the length of fruits is 4  </li>
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.length);   // the length of fruits is 4
+            </script>
+    </ul>
+    
+</body>
+</html>

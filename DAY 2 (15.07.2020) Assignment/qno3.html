@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 2 (15/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 Question no.3</title>
+</head>
+<body>
+    <h3> Question no.3</h3>
+    <p> Ask the user if he is 21+ and log the value "Can drink", "Cannot Drink".</p>
+<h3> ARE YOU 21+?</h3>
+    <p>If your are 21+ enter "yes".</p>
+    <p>If your not 21+ then enter "no".</p>
+
+<input id="myInput" type="text">
+
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+<script>
+    function myFunction() {
+      var letter = document.getElementById("myInput").value;
+      var text;
+    
+      // If the letter is "yes"
+      if (letter === "yes") {
+        text = "Can drink";
+        
+      
+        
+      
+      } else {
+        text = "Cannot Drink";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    
+    
+</body>
+</html>
