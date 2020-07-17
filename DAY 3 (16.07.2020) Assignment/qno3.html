@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3>DAY 3 (16/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Question no.3</title>
+</head>
+<body>
+    <h3> QUESTION NO. 3</h3>
+    <p> Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+        statements. Also the same code using switch or ternary
+        input: 50
+        Output : Marks are 50 and grade is B</p>
+        <script>
+                let marks = prompt("Enter your marks.");
+
+//using if else if statement
+console.log("By using IF ELSE IF");
+                let grade;
+            if(+marks > 90){
+                grade = "A+";
+            }else if(+marks > 80){
+                grade = "A";
+            }else if(+marks > 70){
+                grade = "B+";
+            }else if(+marks > 60){
+                grade = "B";
+            }else if(+marks > 50){
+                grade = "C+";
+            }else if(+marks > 40){
+                grade = "C";
+            }else if(+marks > 0)
+                grade = "Fail";
+            else{
+                grade = "Incorrect marks."
+            }
+
+        console.log(`Marks are ${marks} and grade is ${grade}.`); 
+
+        //using ternary operator
+        console.log("By using TERNARY OPERATOR");
+
+        grade = (+marks > 90) ? "A+": (+marks > 80) ? "A" : (+marks > 70) ? "B+" : (+marks > 60) ? "B": (+marks > 50) ? "C+" : (+marks > 40) ? "C" : "Fail" ;
+        console.log(`Marks are ${marks} and grade is ${grade}.`);
+
+        //using switch case
+        console.log("By using SWITCH CASE");
+        switch(true){
+            case  (+marks > 90):
+            grade = "A+";
+                break;
+            case (+marks > 80) :
+                grade = "A";
+                break;
+            case (+marks > 70) :
+                grade = "B+";
+                break;
+            case (+marks > 60) :
+                grade = "B";
+                break;
+            case (+marks > 50) :
+                grade = "C+";
+                break;
+            case (+marks > 40) : 
+                grade = "C";
+                break;
+            case (+marks > 0) :
+                grade = "Fail";
+                break;
+            default:
+                grade = "Incorrect value."
+        }
+        console.log(`Marks are ${marks} and grade is ${grade}.`); 
+
+        </script>
+    
+</body>
+</html>
