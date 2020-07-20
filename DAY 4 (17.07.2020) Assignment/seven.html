@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 4 (17/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.7</title>
+</head>
+<body>
+    <p><b> Question 7:</b></p>
+    <p> An integer number greater than 1 is called a prime if it cannot be divided without a remainder by anything
+        except 1 and itself.
+        In other words, n > 1 is a prime if it can’t be evenly divided by anything except 1 and n.
+        For example, 5 is a prime, because it cannot be divided without a remainder by 2, 3 and 4.
+        Write the code which outputs prime numbers in the interval from 2 to n.
+        For n = 10 the result will be 2,3,5,7.
+        P.S. The code should work for any n, not be hard-tuned for any fixed value</p>
+
+        <p id="demo"></p>
+        <script>
+        let userInput = Number(prompt("Enter A Number"));
+checkPrime(userInput);
+function checkPrime(n){
+let i = 2;
+let count,c = null;       
+   for (count = 2 ;count <= n;  )
+   {
+      for (c = 2 ;c <= i - 1;c++)
+      {
+         if (i%c == 0)
+            break;
+      }
+      if (c == i)
+      {
+        console.log(i);
+        document.getElementById("demo").innerHTML += i+"<br>";
+         count++;
+      }
+      i++; 
+}
+}   
+</script>
+</body>
+</html>

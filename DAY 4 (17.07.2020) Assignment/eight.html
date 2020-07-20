@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 4 (17/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.8</title>
+</head>
+<body>
+    <p><b> Question 8:</b></p>
+    <p>
+        Replace Function Expressions with arrow functions in the code below:
+        <p>   function ask(question, yes, no){           </p>
+        <p>   if(confirm(question)) yes()          </p>
+        <p> else no();       </p>
+        <p>  }      </p>
+        <p>      ask("Do you agree", function() {alert("You agreed")}, function() {alert("You canceled the execution.")})     </p>
+        </p>
+
+        <script>
+             let ask = (question, yes, no) => {
+            if(confirm(question)) yes()
+            else no();
+        }
+        ask("Do you agree", () => alert("You agreed"), () => alert("You canceled the execution."))
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 4 (17/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.2</title>
+</head>
+<body>
+    <P><b> Question 2:</b></P>
+    <p> Destructure the following object.</p>
+    <p>const student={ </p>
+    <p>name: "Helsinki",</p>
+    <p>age: 24,</p>
+    <p>projects: {</p>
+    <p>diceGame: "Two player dice game using JavaScript"</p>
+    <p> }</p>
+    <p> }</p>
+    <script>
+        const student={ 
+            name: "Helsinki",
+            age: 24,
+            projects: {
+                diceGame: "Two player dice game using JavaScript"
+            }
+        }
+
+const{name,age,projects:{diceGame}}=student;
+        console.log("The name is "+name," , the age is "+age," and he has developed "+diceGame);
+    </script>
+    
+</body>
+</html>

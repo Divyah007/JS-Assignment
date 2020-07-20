@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h3> DAY 4 (17/07/2020) ASSIGNMENT</h3>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question no.5</title>
+</head>
+<body>
+    <p><b> Question 5:</b></p>
+    <p> You are managing a sales department for your company, you want to reward your employees based on
+        the sales made by them during the year.</p>
+        <p> The criteria is as follows:
+            <p>  1. Sales from 0-5000 : 2%    </p>
+            <p>2. Sales from 5001 - 10000 : 5%</p>
+            <p> 3. Sales from 10001 - 20000 : 7%</p>
+            <p>4. Above 20000 - 10%</p>
+           <p> Then log the total commission earned by him.</p>
+<script>
+ let sales = Number(prompt("Enter the Sales: "));
+ if (sales > 0 && sales <= 5000) {
+    commissionPercent = 2;
+    commission = sales * (commissionPercent / 100);
+}
+else if (sales >= 5001 && sales <= 10000) {
+    commissionPercent = 5;
+    commission = sales * (commissionPercent / 100);
+}
+else if (sales >= 10001 && sales <= 20000) {
+    commissionPercent = 7;
+    commission = sales * (commissionPercent / 100);
+}
+else if (sales > 20000) {
+    commissionPercent = 10;
+    commission = sales * (commissionPercent / 100);
+}
+else {
+    console.log("Invaild Input!!");
+    alert("Invaild input");
+}
+commission = commission.toFixed(3);
+console.log(`As per Your Total Sales:- ${sales} , Your ${commissionPercent}% Commission Is ${commission}.`);
+
+</script>
+          
+</body>
+</html>
