@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TABLES</title>
+</head>
+<body >
+    <h2><pre>Question 2:
+        Write a program that will display the multiplication table of a number on the webpage in a proper
+        format. Take the input from the user.
+        Input - 5
+        Output - 
+        5 x 1 = 5
+        5 x 2 = 10
+        and so on…</pre>
+        Solution:
+    </h2>
+    <h3 id="h3table" ></h3>
+    <p id="ptable"></p>
+    <script>
+        let userInput = Number(prompt("Enter A Number "));
+let tables = null;
+let pTables = document.getElementById('ptable');
+let h3Tables = document.getElementById('h3table');
+h3Tables.style.fontSize = "25px";
+pTables.style.fontSize = "20px";
+pTables.style.marginLeft = "20px";
+h3Tables.style.marginLeft = "10px";
+console.log(userInput !=="");
+if(userInput !=null && userInput !=""){
+    h3Tables.innerText = `Table of ${userInput} :-`;
+    for(i=1;i<=12;i++){
+        tables = `${userInput} x ${i} = ${userInput*i}<br>`;
+        pTables.innerHTML += tables;
+    }
+}
+    </script>
+    </body>
+    </html>

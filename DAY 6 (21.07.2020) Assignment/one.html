@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CHANGE BG </title>
+</head>
+<body id="bg">
+    <h2><pre>Question 1:
+        Write a program that will iterate over an array of colors and change the background of the page
+        after 5 seconds.</pre>
+    </h2>
+    <script>
+        let arrColor = ['Red','Blue','Green','Yellow','Skyblue','grey','pink','orange'];
+
+
+let bg = document.getElementById('bg');
+
+
+
+function changeBg(){
+    const arrColorLength = arrColor.length;
+    let random = Math.trunc(Math.random()*arrColorLength);
+    console.log(arrColor[random]);
+    bg.style.backgroundColor = arrColor[random];
+}
+
+setInterval(changeBg,5000);
+    </script>
+    </body>
+    </html>
